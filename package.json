@@ -1,0 +1,24 @@
+{
+  "name": "api-exercise",
+  "version": "0.0.1",
+  "description": "API lab server to train on how to call API using node-fetch or Postman",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julestechting/api-exercise.git"
+  },
+  "keywords": [
+    "api",
+    "lab"
+  ],
+  "author": "Jules Tech Consulting (julestechconsulting@gmail.com)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/julestechting/api-exercise/issues"
+  },
+  "homepage": "https://github.com/julestechting/api-exercise#readme"
+}
