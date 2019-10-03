@@ -9,7 +9,9 @@ This Node.JS/Express app is a API lab server to train on how to call APIs using 
 
 ### How to install
 1/ Clone this git repository or download the zip into a folder
+
 2/ Go inside this folder
+
 3/ run `npm install`
 
 ## How to run
@@ -27,6 +29,7 @@ Request must contain as body a JSON object {username: <username>, password: <pas
 There is only one valid set of credentials:
 - username: **user1**
 - password: **complex**
+
 Return a JSON object as response body confirming success as well as an authorization key in the response header *cookie*
 
 *Note all other API calls below require authentication by passing in the request a header* ***X-AUTH*** *the authorization key received during the login process*
