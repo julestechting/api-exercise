@@ -3,7 +3,7 @@
 This Node.JS/Express app is a API lab server to train on how to call APIs using node-fetch or Postman
 
 ## Installation
-### Prerequisite
+### Prerequisites
 - Node.JS 10.16.x or above
 - NPM
 
