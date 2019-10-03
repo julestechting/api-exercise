@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const router = express.Router()
 const fs = require('fs')
+const bodyParser = require('body-parser')
 //
 const apiFunc = require('./api')
 
@@ -28,6 +29,7 @@ const myRouterWithMiddleware = (method, entry, mware, callb) => {
 module.exports = (confFile) => {
   const { port, apis } = getConf(confFile)
 
+  router.use(bodyParser.json())
   app.use("/", router)
 
   apis.map((api) => {
@@ -38,6 +40,8 @@ module.exports = (confFile) => {
       myRouter(api.method, api.entry, apiFunc[api.callb])
     }
   })
+
+  router.use("*", (req, res) => res.sendStatus(400))
 
   // Server
   app.listen(port, function () {
