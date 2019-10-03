@@ -16,6 +16,8 @@ This Node.JS/Express app is a API lab server to train on how to call APIs using 
 
 ## How to run
 run `npm start`
+The web server will listen on port 3000.
+E.g. http://localhost:3000/api
 
 ## API description
 ### /api [GET]
