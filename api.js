@@ -21,7 +21,8 @@ const getColor = (req, res) => {
 }
 
 const checkAuth = (req, res, next) => {
-  // TODO
+  console.log('checkAuth')
+  next()
 }
 
 module.exports = {ping: ping, getPublic: getPublic, login: login, logout: logout, getColor: getColor, checkAuth: checkAuth}
