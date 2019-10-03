@@ -32,7 +32,8 @@ There is only one valid set of credentials:
 
 Return a JSON object as response body confirming success as well as an authorization key in the response header *cookie*
 
-*Note all other API calls below require authentication by passing in the request a header* ***X-AUTH*** *the authorization key received during the login process*
+--
+*Note: all other API calls below require authentication by passing in the request a header* ***X-AUTH*** *containing the authorization key received during the login process*
 
 ### /api/logout [POST] [require authentication]
 Logout and discard the authorization token
@@ -42,4 +43,5 @@ Ping-like function which returns a JSON object - meant to test connectivity whil
 
 ### /apit/priv/<colour> [GET] [require authentication]
 Return a JPEG file depending on the colour provided.
+
 Only valid colours are red and yellow.
