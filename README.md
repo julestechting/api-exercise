@@ -43,7 +43,7 @@ Logout and discard the authorization token
 ### /api/priv [GET] [require authentication]
 Ping-like function which returns a JSON object - meant to test connectivity while authenticated
 
-### /apit/priv/<colour> [GET] [require authentication]
+### /apit/priv/\<colour\> [GET] [require authentication]
 Return a JPEG file depending on the colour provided.
 
 Only valid colours are red and yellow.
